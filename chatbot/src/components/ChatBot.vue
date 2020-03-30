@@ -4,9 +4,12 @@
       <v-col cols="12" >
             <div style="margin-top:5px;margin-left:25px;"><h1 dark style="margin=30px;font-family: 'Abril Fatface';font-size:40px">ApuChat</h1>
             <v-icon class="mb2 orange--text text--darken-1" style=" margin-top:-100px; margin-left:180px ;" x-large>{{ icon }}</v-icon></div>
-            <div style="position:absolute; top : 25px ; left : 850px">
             
-            <div class="dropdown">
+            <!-- Start of About and Info drop down div blocks --> 
+            <div style="position:absolute; top : 25px ; left : 850px">
+
+            <!-- Start of dropdown div block holding About button -->
+            <div class="Aboutdropdown">
             <button class="dropbtn" dark  style="display:inline;font-family: 'Abril Fatface';font-size:37px">ABOUT</button>
             <div class="dropdown-content">
             <p>
@@ -16,10 +19,24 @@
               was developed with the purpose of helping students review their knowledge of Software Engineering principles in an efficient manner.
             </p>
             </div>
-            <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="margin-left:20px;font-family: 'Abril Fatface';" >INFO</button>
             </div>
+          
+            <!-- End of dropdown div block holding About button -->
             
+            <!-- Start of dropdown div block holding  Info button -->
+            <div class="Infodropdown">
+            <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="position:absolute; left : 150px ; top : 20px ;font-family: 'Abril Fatface';" >INFO</button>
+            <div class="dropdown-content2">
+             <p>
+              Devleoped By: </br>
+              Ahmad Raza Jamal, Florencia Chomski, Alex Rogov, Paul Zapote, Kshitij Suri
+            </p>
             </div>
+            </div>
+            <!-- End of dropdown div block holding Info button -->
+
+            </div>
+            <!-- End of About and Info drop down div blocks --> 
         
 
 
@@ -432,11 +449,27 @@ ul {
   z-index: 1;
 }
 
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  right: -30px;
+  font-family: 'Merriweather', bold;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Infodropdown:hover .dropdown-content2 {
+  display: block;
+}
+
 /*.dropdown-content p:hover { background-color: #ffedcc
 
 }*/
 
-.dropdown:hover .dropdown-content {
+.Aboutdropdown:hover .dropdown-content {
   display: block;
 }
 
