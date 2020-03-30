@@ -5,9 +5,22 @@
             <div style="margin-top:5px;margin-left:25px;"><h1 dark style="margin=30px;font-family: 'Abril Fatface';font-size:40px">ApuChat</h1>
             <v-icon class="mb2 orange--text text--darken-1" style=" margin-top:-100px; margin-left:180px ;" x-large>{{ icon }}</v-icon></div>
             <div style="position:absolute; top : 25px ; left : 850px">
-            <h3 dark  style="display:inline;font-family: 'Abril Fatface';font-size:37px">ABOUT</h3>
             
-            <i class="material-icons mb2 orange--text text--darken-1" style="margin-left:20px;font-family: 'Abril Fatface';" >INFO</i></div>
+            <div class="dropdown">
+            <button class="dropbtn" dark  style="display:inline;font-family: 'Abril Fatface';font-size:37px">ABOUT</button>
+            <div class="dropdown-content">
+            <p>
+              This Chatbot mimics <b> Dr. Apurva Narayan [Professor at UBCO] </b> by providing users with information regarding 
+              Software Development Life Cycles (SDLCs) based on the user’s queries. The user takes on 
+              the role of a student in <b> COSC 310 [Software Engineering]</b> who is seeking to learn more about SDLCs. This Chatbot 
+              was developed with the purpose of helping students review their knowledge of Software Engineering principles in an efficient manner.
+            </p>
+            </div>
+            <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="margin-left:20px;font-family: 'Abril Fatface';" >INFO</button>
+            </div>
+            
+            </div>
+        
 
 
         <!--Messenging bubbles and text appears in this row-->
@@ -406,5 +419,26 @@ ul {
     height:100%;
     width:77%;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 100px;
+  font-family: 'Merriweather', bold;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*.dropdown-content p:hover { background-color: #ffedcc
+
+}*/
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 </style>
