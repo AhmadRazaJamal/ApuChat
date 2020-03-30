@@ -52,21 +52,21 @@
           </v-row>
 
         <!--Where user inputs text-->
-         <v-container style=" width: 90%;background-color: #F7921A ; position:relative; left:-20px; top:50px; border-radius:10px  ">
+         <v-container style=" width: 90%; position:relative; left:-20px; top:50px; border-radius:10px  ">
           <v-row class="">
             <v-col cols="10" class="flex-grow-1 pl-0" color="white" > <!--label="Chat"-->
               <v-text-field
-              class="ml-8 white--text"
-              color="white"
+              class="ml-8 black--text"
+              color="black"
               placeholder="Chat about SDLC ( eg. type: 'agile' )"
-              style="border-style: none; color: white ;font-family: 'Abril Fatface';  border-bottom: none!important;box-shadow: none!important;"
+              style="border-style: none; color: black ;font-family: 'Abril Fatface';  border-bottom: none!important;box-shadow: none!important;"
               v-model="message"  
               v-on:keyup.enter="inputMessage"
               ></v-text-field> 
             </v-col>
             <v-col cols="2" class="flex-shrink-1">
               <button  
-              style="min-width:120px ; border : 3px solid white ;border-radius:10px; font-family: 'Abril Fatface'; font-size : 24px ; color: white ; margin-left:0px ; margin-top: 15px; font-family=bold ; background-color: transparent ;" 
+              style="min-width:120px ; border-style : none none solid none ;border-radius:3px; font-family: 'Abril Fatface'; font-size : 24px ; color: black ; margin-left:0px ; margin-top: 15px; font-family=bold ; background-color: transparent ;" 
               >SEND</button>
             </v-col>
           </v-row>
@@ -446,7 +446,7 @@ ul {
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 3;
 }
 
 .dropdown-content2 {
@@ -458,7 +458,7 @@ ul {
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 3;
 }
 
 .Infodropdown:hover .dropdown-content2 {
