@@ -28,8 +28,8 @@
             <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="position:absolute; left : 150px ; top : 20px ;font-family: 'Abril Fatface';" >INFO</button>
             <div class="dropdown-content2">
              <p>
-              Devleoped By: </br>
-              Ahmad Raza Jamal, Florencia Chomski, Alex Rogov, Paul Zapote, Kshitij Suri
+              Devleoped By: <br>
+              Ahmad Raza Jamal, Alex Rogov, Florencia Chomski, Paul Zapote, Kshitij Suri
             </p>
             </div>
             </div>
@@ -452,7 +452,7 @@ ul {
 .dropdown-content2 {
   display: none;
   position: absolute;
-  right: -30px;
+  right: -40px;
   font-family: 'Merriweather', bold;
   padding: 30px;
   background-color: #f9f9f9;

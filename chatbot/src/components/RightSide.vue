@@ -8,7 +8,7 @@
           <v-row>
             <div class = "suggestions" style = "border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button  
+              <button class = "button1"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Waterfall</button>
             </v-col>
             </div>
@@ -17,23 +17,25 @@
           <v-row style ="margin-top:20px;">
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button  
+              <button class = "button2"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
             </v-col>
             </div>
           </v-row>
         </v-container>
+
   </div>
 </template>
 
 <script>
-export default {
-
-}
+  export default {
+    
+  }      
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
   .suggestions:hover {
     background-color:#ffffff;
   }
