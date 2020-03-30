@@ -55,7 +55,7 @@ Apart from hosting, Firebase includes other features such as a database. Cloud F
 
 ## About
 
-Devleoped By: *Ahmad Raza Jamal, Florencia Chomski, Alex Rogov, Paul Zapote, Florencia Chomski*
+Devleoped By: *Ahmad Raza Jamal, Florencia Chomski, Alex Rogov, Paul Zapote, Kshitij Suri*
 
 University of British Columbia | Software Engineering Course | 2020 Spring
 
