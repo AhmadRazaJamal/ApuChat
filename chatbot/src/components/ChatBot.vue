@@ -29,7 +29,7 @@
             <div class="dropdown-content2">
              <p>
               Devleoped By: <br>
-              Ahmad Raza Jamal, Alex Rogov, Florencia Chomski, Paul Zapote, Kshitij Suri
+              Alex Rogov, Ahmad Raza Jamal, Florencia Chomski, Paul Zapote, Kshitij Suri
             </p>
             </div>
             </div>

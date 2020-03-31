@@ -1,3 +1,4 @@
+<!--  Did not use the header in final product -->
 <template>
   <div class="ma-0 pa-0 grey darken-4 d-flex justify-space-between" style="min-width:100%; min-height:100%;">
         <div class="grey--text text--lighten-4">
