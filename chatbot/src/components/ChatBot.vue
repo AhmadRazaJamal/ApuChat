@@ -71,9 +71,12 @@
             </v-col>
           </v-row>
         </v-container>
+        <!--  End of user input -->
+
      </v-col>
     </v-row>
   </div>
+
 </template>
 
 
@@ -115,14 +118,16 @@
             let newLi = document.createElement('li');
             newLi.textContent = msg;
             newLi.style.textAlign = align;
-            if(align == 'right'){
+
+            if(align == 'right'){ // If its the user chat then chang chat box color to this
             newLi.style.backgroundColor = "#999999" ; 
             newLi.style.border = "3px solid white"
             }
-            if(align == 'left'){
+            if(align == 'left'){ // If its the bot chat then chang chat box color to this
             newLi.style.backgroundColor = "#cccccc" ; 
             newLi.style.border = "3px solid white"
             }
+
             newLi.style.borderRadius = "10px" ;
             newLi.style.padding="14px"; 
             newLi.style.margin="10px 0";
@@ -135,7 +140,7 @@
             let dest = document.getElementById(tagID).getElementsByTagName('ul')[0];
             dest.appendChild(newLi);
 
-            if(align == "left"){
+            if(align == "left"){ // Code that adds the image for bot chat and aligns it 
             var img_elem = document.createElement("img");
             img_elem.setAttribute("src", "https://pbs.twimg.com/profile_images/775736572822052864/t_zQN3e3_400x400.jpg");
             img_elem.setAttribute("border-radius","50%");
@@ -152,7 +157,7 @@
             dest.appendChild(newLi);
             }
 
-            if(align == "right"){
+            if(align == "right"){ // Code that adds the image for user chat and aligns it 
             var img_elem = document.createElement("img");
             img_elem.setAttribute("src", "https://www.kindpng.com/picc/m/105-1055656_account-user-profile-avatar-avatar-user-profile-icon.png");
             img_elem.setAttribute("border-radius","50%");
@@ -167,6 +172,7 @@
             dest.appendChild(newLi);
             dest.appendChild(img_elem);}
     },
+
     scrollToBottom: function() {      //scroll div to bottom
       let chatbox = document.getElementById('chatbox');
       chatbox.scrollTop = chatbox.scrollHeight;
