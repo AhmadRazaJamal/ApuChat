@@ -1,7 +1,7 @@
 <template>
   <div style="margin:0px;" id='mainDiv'>
     <v-row class="">
-      <v-col cols="12" >
+      <v-col cols="9" >
             <div style="margin-top:5px;margin-left:25px;"><h1 dark style="margin=30px;font-family: 'Abril Fatface';font-size:40px">ApuChat</h1>
             <v-icon class="mb2 orange--text text--darken-1" style=" margin-top:-100px; margin-left:180px ;" x-large>{{ icon }}</v-icon></div>
             
@@ -41,8 +41,8 @@
 
 
         <!--Messenging bubbles and text appears in this row-->
-          <v-row id="chatbox" style="height: 500px; overflow: auto; margin-top: 20px;">
-            <v-col cols="11">
+          <v-row id="chatbox" style="height: 510px;width: 1050px; overflow: auto; margin-top: 20px;">
+            <v-col cols="12">
               <div id="responses">
                     <ul>
                         <!--Chatbot and users outputs are render into here-->
@@ -52,10 +52,11 @@
           </v-row>
 
         <!--Where user inputs text-->
-         <v-container style=" width: 90%; position:relative; left:-20px; top:50px; border-radius:10px  ">
+         <v-container style=" width: 130%; position:relative; left:0px; top:50px; border-radius:10px  ">
           <v-row class="">
             <v-col cols="10" class="flex-grow-1 pl-0" color="white" > <!--label="Chat"-->
               <v-text-field
+              id="chat_textfield"
               class="ml-8 black--text"
               color="black"
               placeholder="Chat about SDLC ( eg. type: 'agile' )"
@@ -66,7 +67,8 @@
             </v-col>
             <v-col cols="2" class="flex-shrink-1">
               <button  
-              style="min-width:120px ; border-style : none none solid none ;border-radius:3px; font-family: 'Abril Fatface'; font-size : 24px ; color: black ; margin-left:0px ; margin-top: 15px; font-family=bold ; background-color: transparent ;" 
+              v-on:click="inputMessage"
+              style="min-width:120px ; border-style : none none solid none ;border-radius:3px; font-family: 'Abril Fatface'; font-size : 24px ; color: black ; margin-left:0px ; margin-top: 10px; font-family=bold ; background-color: transparent ;" 
               >SEND</button>
             </v-col>
           </v-row>
@@ -74,9 +76,76 @@
         <!--  End of user input -->
 
      </v-col>
-    </v-row>
-  </div>
+  </v-row>
 
+  <!-- Start of div block 2 for FAQ section --> 
+  <div id="mainDiv2" > 
+    <h3 style="align:center ; margin-left:30px;margin-top:28px ;font-family: 'Abril Fatface';font-size:35px">FAQ 
+    <i class="material-icons mb2 orange--text text--darken-1" style="margin-left:5px" x-large >help</i></h3>
+
+    <!--  A container the FAQ's --> 
+    <v-container  style="position:relative; left:8px; top: 35px; border-radius: 10px; height:120px;">
+          <!--  A row containing a button for first FAQ --> 
+          <v-row>
+            <div class = "suggestions" style = "border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "waterfall" v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Waterfall</button>
+            </v-col>
+            </div>
+          </v-row>
+
+          <!--  A row containing a button for second FAQ --> 
+          <v-row style ="margin-top:20px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "vshaped"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+            </v-col>
+            </div>
+          </v-row>
+
+          <v-row style ="margin-top:20px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "vshaped"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+            </v-col>
+            </div>
+          </v-row>
+
+          <v-row style ="margin-top:20px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "vshaped"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+            </v-col>
+            </div>
+          </v-row>
+
+          <v-row style ="margin-top:20px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "vshaped"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+            </v-col>
+            </div>
+          </v-row>
+
+          <v-row style ="margin-top:20px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <v-col cols="3">
+              <button id = "vshaped"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+            </v-col>
+            </div>
+          </v-row>
+          
+        </v-container>
+    </div>
+    <!-- End of div block 2 for FAQ section -->
+
+  </div>
 </template>
 
 
@@ -99,14 +168,14 @@
         if(this.message != '') {
             let chatBotResponse = '';
             //Add user input
-            this.createNewElement('responses','right','66%', this.message);
+            this.createNewElement('responses','right','60%', this.message);
             
             //Processing user's message --> chatbot response
             chatBotResponse = this.process();
 
              
             //Create new chatbot response
-            this.createNewElement('responses','left', '66%' , chatBotResponse);
+            this.createNewElement('responses','left', '60%' , chatBotResponse);
             
             //scroll to bottom if needed
             this.scrollToBottom(); 
@@ -168,9 +237,14 @@
             img_elem.style.top="-50px";
             img_elem.style.border="4px solid black"
             newLi.style.position= "relative";
-            img_elem.style.left="965px";
+            img_elem.style.left="915px";
             dest.appendChild(newLi);
             dest.appendChild(img_elem);}
+    },
+
+    insertFAQ: function(){ // Function that inserts FAQ
+      var button = event.target ; 
+      this.message = button.textContent ; 
     },
 
     scrollToBottom: function() {      //scroll div to bottom
@@ -412,8 +486,10 @@
             this.defaultArray.push('Very interesting...');
             this.defaultArray.push('I had a bad bit ;) rephrase please');
             //TODO: More default sentences  
-}
     }
+
+  }
+
 </script>
 
 <style scoped>
@@ -421,6 +497,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Sen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 ul {
   list-style: none;
@@ -441,6 +518,15 @@ ul {
     right:0;
     height:100%;
     width:77%;
+}
+
+#mainDiv2{
+    position:absolute;
+    top:0px;
+    left:1100px;
+    background-image:  linear-gradient(#ffc966 , #ffedcc );
+    height:100%;
+    width:34%;
 }
 
 .dropdown-content {
@@ -471,13 +557,13 @@ ul {
   display: block;
 }
 
-/*.dropdown-content p:hover { background-color: #ffedcc
-
-}*/
-
 .Aboutdropdown:hover .dropdown-content {
   display: block;
 }
 
+/*  On hover to suggestions div blocks change the background color to highlight */ 
+.suggestions:hover {
+  background-color:#ffffff;
+}
 
 </style>

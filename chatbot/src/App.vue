@@ -3,12 +3,12 @@
     <v-content>
       <!--content-->
       <v-row style="min-height: 100%;background-color:#ffffff ">
-        <v-col cols="9" style = "background-image:/assets/mainchatbackground.jpg;">
+        <v-col cols="12" style = "background-image:/assets/mainchatbackground.jpg;">
           <ChatBot/>
         </v-col>
-        <v-col cols="3" style="background-image: linear-gradient(#ffc966 , #ffedcc );">
+       <!-- <v-col cols="3" style="background-image: linear-gradient(#ffc966 , #ffedcc );">
           <RightSide/>
-        </v-col>
+        </v-col> -->
       </v-row>
 <!--  -->
       <Footer/>
@@ -20,7 +20,7 @@
 <script>
 import ChatBot from './components/ChatBot';
 import Footer from './components/Footer';
-import RightSide from './components/RightSide';
+//import RightSide from './components/RightSide';
 
 
 export default {
@@ -28,8 +28,7 @@ export default {
 
   components: {
     ChatBot,
-    Footer,
-    RightSide
+    Footer
   },
 
   data ()  {
