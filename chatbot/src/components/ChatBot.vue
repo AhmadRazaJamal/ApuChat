@@ -100,7 +100,7 @@
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
               <button id = "vshaped"  v-on:click="insertFAQ"
-              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">SDLC</button>
             </v-col>
             </div>
           </v-row>
@@ -108,8 +108,8 @@
           <v-row style ="margin-top:20px;">
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button id = "vshaped"  v-on:click="insertFAQ"
-              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+              <button id = "agile"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Agile</button>
             </v-col>
             </div>
           </v-row>
@@ -117,8 +117,8 @@
           <v-row style ="margin-top:20px;">
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button id = "vshaped"  v-on:click="insertFAQ"
-              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+              <button id = "scrum"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Scrum</button>
             </v-col>
             </div>
           </v-row>
@@ -126,8 +126,8 @@
           <v-row style ="margin-top:20px;">
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button id = "vshaped"  v-on:click="insertFAQ"
-              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+              <button id = "xp"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">XP</button>
             </v-col>
             </div>
           </v-row>
@@ -135,12 +135,11 @@
           <v-row style ="margin-top:20px;">
             <div class ="suggestions" style="border-radius: 10px; width: 330px;">
             <v-col cols="3">
-              <button id = "vshaped"  v-on:click="insertFAQ"
-              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">VShaped</button>
+              <button id = "rad"  v-on:click="insertFAQ"
+              style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">RAD</button>
             </v-col>
             </div>
           </v-row>
-          
         </v-container>
     </div>
     <!-- End of div block 2 for FAQ section -->
