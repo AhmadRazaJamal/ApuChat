@@ -1,4 +1,4 @@
-<template>
+<template id="mainBlock">
   <div style="margin:0px;" id='mainDiv'>
     <v-row class="">
       <v-col cols="9" >
@@ -28,7 +28,7 @@
             <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="position:fixed; left : 990px ; top : 45px ;font-family: 'Abril Fatface';" >INFO</button>
             <div class="dropdown-content2">
              <p>
-              Devleoped By: <br>
+              Developed By: <br>
               Alex Rogov, Ahmad Raza Jamal, Florencia Chomski, Paul Zapote, Kshitij Suri
             </p>
             </div>
@@ -52,7 +52,7 @@
           </v-row>
 
         <!--Where user inputs text-->
-         <v-container style=" width: 130%; position:relative; left:0px; top:50px; border-radius:10px  ">
+         <v-container style=" width: 120%; position:relative; left:0px; top:30px; border-radius:10px  ">
           <v-row class="">
             <v-col cols="10" class="flex-grow-1 pl-0" color="white" > <!--label="Chat"-->
               <v-text-field
@@ -60,14 +60,14 @@
               class="ml-8 black--text"
               color="black"
               placeholder="Chat about SDLC ( eg. type: 'agile' )"
-              style="border-style: none; color: black ;font-family: 'Abril Fatface';  border-bottom: none!important;box-shadow: none!important;"
+              style="font-size: 20px ; border-style: none; color: black ;font-family: 'Merriweather, bold';  border-bottom: none!important;box-shadow: none!important;"
               v-model="message"  
               v-on:keyup.enter="inputMessage"
               ></v-text-field> 
             </v-col>
             <v-col cols="2" class="flex-shrink-1">
               <button  
-              v-on:hover="inputMessage"
+              v-on:click="inputMessage"
               style="min-width:120px ; border-style : none none solid none ;border-radius:3px; font-family: 'Abril Fatface'; font-size : 24px ; color: black ; margin-left:0px ; margin-top: 10px; font-family=bold ; background-color: transparent ;" 
               >SEND</button>
             </v-col>
@@ -87,9 +87,9 @@
     <v-container  style="position:relative; left:8px; top: 35px; border-radius: 10px; height:120px;">
           <!--  A row containing a button for first FAQ --> 
           <v-row>
-            <div class = "suggestions" style = "border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class = "suggestions" style = "border-radius: 10px; width: 325px;" v-on:click="insertFAQ" >
             <v-col cols="3">
-              <button id = "waterfall" 
+              <button id = "waterfall" v-on:click="insertFAQ"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Waterfall</button>
             </v-col>
             </div>
@@ -97,16 +97,16 @@
 
           <!--  A row containing a button for second FAQ --> 
           <v-row style ="margin-top:20px;" >
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class ="suggestions" style="border-radius: 10px; width: 325px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "vshaped"  
+              <button id = "vshaped" v-on:click="insertFAQ"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">SDLC</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class ="suggestions" style="border-radius: 10px; width: 325px;" v-on:click="insertFAQ">
             <v-col cols="3">
               <button id = "agile" v-on:click="insertFAQ" 
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Agile</button>
@@ -115,27 +115,27 @@
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class ="suggestions" style="border-radius: 10px; width: 325px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "scrum"  
+              <button id = "scrum"  v-on:click="insertFAQ"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Scrum</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class ="suggestions" style="border-radius: 10px; width: 325px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "xp"  
+              <button id = "xp"  v-on:click="insertFAQ"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">XP</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
+            <div class ="suggestions" style="border-radius: 10px; width: 325px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "rad"  
+              <button id = "rad"  v-on:click="insertFAQ"
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">RAD</button>
             </v-col>
             </div>
@@ -508,7 +508,6 @@ ul {
 }
 
 #mainDiv{
-    background-size: cover;
     background-position: center;
     position:fixed;
     top:0;
@@ -525,7 +524,7 @@ ul {
     left:1100px;
     background-image:  linear-gradient(#ffc966 , #ffedcc );
     height:100%;
-    width:34%;
+    width:31%;
 }
 
 .dropdown-content {
@@ -537,19 +536,19 @@ ul {
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
+  z-index: 10;
 }
 
 .dropdown-content2 {
   display: none;
-  position: absolute;
+  position: ab;
   right: -40px;
   font-family: 'Merriweather', bold;
   padding: 30px;
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
+  z-index: 30;
 }
 
 .Infodropdown:hover .dropdown-content2 {

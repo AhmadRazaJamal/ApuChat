@@ -2,7 +2,7 @@
   <v-app>
     <v-content>
       <!--content-->
-      <v-row style="min-height: 100%;background-color:#ffffff ">
+      <v-row style="background-color:#ffffff ">
         <v-col cols="12" style = "background-image:/assets/mainchatbackground.jpg;">
           <ChatBot/>
         </v-col>
