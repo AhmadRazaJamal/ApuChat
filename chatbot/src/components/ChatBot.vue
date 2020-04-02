@@ -541,7 +541,7 @@ ul {
 
 .dropdown-content2 {
   display: none;
-  position: ab;
+  position: absolute;
   right: -40px;
   font-family: 'Merriweather', bold;
   padding: 30px;
