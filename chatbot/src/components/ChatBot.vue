@@ -6,7 +6,7 @@
             <v-icon class="mb2 orange--text text--darken-1" style=" margin-top:-100px; margin-left:180px ;" x-large>{{ icon }}</v-icon></div>
             
             <!-- Start of About and Info drop down div blocks --> 
-            <div style="position:absolute; top : 25px ; left : 850px">
+            <div style="position:fixed; top : 25px ; left : 850px">
 
             <!-- Start of dropdown div block holding About button -->
             <div class="Aboutdropdown">
@@ -25,7 +25,7 @@
             
             <!-- Start of dropdown div block holding  Info button -->
             <div class="Infodropdown">
-            <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="position:absolute; left : 150px ; top : 20px ;font-family: 'Abril Fatface';" >INFO</button>
+            <button id = "dropbtn2" class="material-icons mb2 orange--text text--darken-1" style="position:fixed; left : 990px ; top : 45px ;font-family: 'Abril Fatface';" >INFO</button>
             <div class="dropdown-content2">
              <p>
               Devleoped By: <br>
@@ -67,7 +67,7 @@
             </v-col>
             <v-col cols="2" class="flex-shrink-1">
               <button  
-              v-on:click="inputMessage"
+              v-on:hover="inputMessage"
               style="min-width:120px ; border-style : none none solid none ;border-radius:3px; font-family: 'Abril Fatface'; font-size : 24px ; color: black ; margin-left:0px ; margin-top: 10px; font-family=bold ; background-color: transparent ;" 
               >SEND</button>
             </v-col>
@@ -87,55 +87,55 @@
     <v-container  style="position:relative; left:8px; top: 35px; border-radius: 10px; height:120px;">
           <!--  A row containing a button for first FAQ --> 
           <v-row>
-            <div class = "suggestions" style = "border-radius: 10px; width: 330px;">
+            <div class = "suggestions" style = "border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "waterfall" v-on:click="insertFAQ"
+              <button id = "waterfall" 
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Waterfall</button>
             </v-col>
             </div>
           </v-row>
 
           <!--  A row containing a button for second FAQ --> 
-          <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+          <v-row style ="margin-top:20px;" >
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "vshaped"  v-on:click="insertFAQ"
+              <button id = "vshaped"  
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">SDLC</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "agile"  v-on:click="insertFAQ"
+              <button id = "agile" v-on:click="insertFAQ" 
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Agile</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "scrum"  v-on:click="insertFAQ"
+              <button id = "scrum"  
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">Scrum</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "xp"  v-on:click="insertFAQ"
+              <button id = "xp"  
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">XP</button>
             </v-col>
             </div>
           </v-row>
 
           <v-row style ="margin-top:20px;">
-            <div class ="suggestions" style="border-radius: 10px; width: 330px;">
+            <div class ="suggestions" style="border-radius: 10px; width: 330px;" v-on:click="insertFAQ">
             <v-col cols="3">
-              <button id = "rad"  v-on:click="insertFAQ"
+              <button id = "rad"  
               style= "color: black; margin-left:10px; margin-top: 5px; font-family: 'Merriweather', bold; border:0 none; background-color: transparent;">RAD</button>
             </v-col>
             </div>
@@ -510,7 +510,7 @@ ul {
 #mainDiv{
     background-size: cover;
     background-position: center;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     bottom:0;
@@ -520,7 +520,7 @@ ul {
 }
 
 #mainDiv2{
-    position:absolute;
+    position:fixed;
     top:0px;
     left:1100px;
     background-image:  linear-gradient(#ffc966 , #ffedcc );
