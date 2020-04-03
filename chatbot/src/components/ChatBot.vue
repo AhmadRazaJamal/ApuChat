@@ -41,7 +41,7 @@
 
 
         <!--Messenging bubbles and text appears in this row-->
-          <v-row id="chatbox" style="height: 510px;width: 1050px; overflow: auto; margin-top: 20px;">
+          <v-row id="chatbox" style="height: 66vh;width: 72.9vw; overflow: auto; margin-top: 20px;">
             <v-col cols="12">
               <div id="responses">
                     <ul>
@@ -52,7 +52,7 @@
           </v-row>
 
         <!--Where user inputs text-->
-         <v-container style=" width: 120%; position:relative; left:0px; top:30px; border-radius:10px  ">
+         <v-container style=" width: 120%; position:relative; left:0vw; top:70vh; border-radius:10px; ">
           <v-row class="">
             <v-col cols="10" class="flex-grow-1 pl-0" color="white" > <!--label="Chat"-->
               <v-text-field
@@ -189,11 +189,13 @@
 
             if(align == 'right'){ // If its the user chat then chang chat box color to this
             newLi.style.backgroundColor = "#999999" ; 
-            newLi.style.border = "3px solid white"
+            newLi.style.border = "3px solid white";
             }
+
             if(align == 'left'){ // If its the bot chat then chang chat box color to this
             newLi.style.backgroundColor = "#cccccc" ; 
-            newLi.style.border = "3px solid white"
+            newLi.style.border = "3px solid white";
+            newLi.style.bottom= "50px" ; 
             }
 
             newLi.style.borderRadius = "10px" ;
@@ -527,6 +529,11 @@ ul {
     width:31%;
 }
 
+#chatbox{
+  position: absolute;
+  z-index: -4;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -536,7 +543,7 @@ ul {
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 999 ;
 }
 
 .dropdown-content2 {
@@ -548,7 +555,7 @@ ul {
   background-color: #f9f9f9;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 30;
+  z-index: 999 ;
 }
 
 .Infodropdown:hover .dropdown-content2 {
