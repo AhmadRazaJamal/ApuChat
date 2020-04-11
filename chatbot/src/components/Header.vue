@@ -2,7 +2,7 @@
 <template>
   <div class="ma-0 pa-0 grey darken-4 d-flex justify-space-between" style="min-width:100%; min-height:100%;">
         <div class="grey--text text--lighten-4">
-            <h1 class="display-2 ml-12 pt-6 pb-6" style="">ChatBot
+            <h1 class="display-2 ml-12 pt-6 pb-6" style="">Apurva Bot
             <v-icon class="mb-2 grey--text text--lighten-4" x-large>{{ icon }}</v-icon></h1>    
         </div>
         <div class="mr-12 d-flex align-center">
