@@ -40,27 +40,27 @@ The chatbot uses a RESTful API and calls a GET method to DialogFlow via axios. T
 
 DialogFlow has built in typo checker. If there are large typos with words that are not key words, DialogFlow still understands what is being requested of it. However, it can only handle small typos's such as capitalizations or adding an 's' at the end of key words.
 
-![Example of Typo](https://github.com/rogov-dvp/ChatBot-COSC-310/blob/master/README_Images/Typo.png)
+![Example of Typo](https://github.com/AhmadRazaJamal/ApuChat-ChatBot-/blob/master/README_Images/Typo.png)
 
 #### Small Talk
 
 We implemented the small talk plugin within DialogFlow. This covers phrases such as greetings, goodbyes, thank you, how's your day, and other smaller one phrase conversations. This plugin makes the chatbot seem more natural with small talk.
 
-![Example of Small Talk](https://github.com/rogov-dvp/ChatBot-COSC-310/blob/master/README_Images/Small_talk.png)
+![Example of Small Talk](https://github.com/AhmadRazaJamal/ApuChat-ChatBot-/blob/master/README_Images/Small_talk.png)
 
 
 #### Conversations life length increase
 
 DialogFLow allows for multiple conversation life steps. A step is when a chatbot and the user both say a phrase (eg) question and answer). Multiple life steps means that DialogFlow can continue a conversation of the same topic based on the previous conversation steps. This improves conversation flow and changes the conversation from an interview conversation to a dialogue.
 
-![Example of two step-life conversation](https://github.com/rogov-dvp/ChatBot-COSC-310/blob/master/README_Images/Convo_length_scrum.png)
+![Example of two step-life conversation](https://github.com/AhmadRazaJamal/ApuChat-ChatBot-/blob/master/README_Images/Convo_length_scrum.png)
 
 
 #### Multiple variations of user input structure.
 
 Another feature of DialogFlow is allowing the user to use synonyms for key words. For example, "extreme programming" may be written and most likely be written as "xp". This synonym system allows DialogFlow to understand what the user is saying. The result increases the way a user may type their input and thus improves our chatbot. 
 
-![Example of synonym use](https://github.com/rogov-dvp/ChatBot-COSC-310/blob/master/README_Images/synonyms.png)
+![Example of synonym use](https://github.com/AhmadRazaJamal/ApuChat-ChatBot-/blob/master/README_Images/synonyms.png)
 
 
 ### Hosting
